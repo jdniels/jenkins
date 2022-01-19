@@ -14,7 +14,7 @@ services:
       - "8080:8080"
       - "50000:50000"
     volumes:
-      - jenkins_home:/var/jenkins_home
+      - /var/jenkins_home:/var/jenkins_home
     networks:
       - jenkins_net
     restart: unless-stopped
